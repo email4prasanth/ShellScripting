@@ -47,6 +47,7 @@ ls -al
 - this is used to print the required content.
 ### How to execute a Shell Script?
 - Linux is very secure, `chmod` grants permissions to file 
+![chaning permissions]()
 ### How to grant permissions in Linux?
 ### chmod command and how to use?
 ### How to check the history of commands?
