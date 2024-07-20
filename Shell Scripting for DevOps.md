@@ -25,10 +25,10 @@ ls -al
 - 777 - means **0 111 111 111** equivalent to `-rwxrwxrwx` - all permissions to every one
 
 | Syntax      | Description | 
-| :---        |    :----:   | 
-| -rw-r--r--   | **u**owner/admin/you/root of the file can read and write      | 
-|               | **g**group only read permissions|
-|               | **o** other users only read permissions|
+| :---        | :----:   | 
+| -rw-r--r--   | **u** - owner/admin/you/root of the file can read and write      | 
+|               | **g** - group only read permissions|
+|               | **o**  - other users only read permissions|
 ### (vi/vim/nano) - How to write a file in Linux?
 - Open the file to write the scripts
 ### Difference between touch and vim? 
