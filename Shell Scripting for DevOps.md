@@ -1,9 +1,32 @@
-[Video]()
+- [Video](https://www.youtube.com/watch?v=zsajhz2_50g&list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa&index=8)
+- []()
 ### Introduction 
 ### What is the purpose of scripting and automation?
-### How to create a file ?
-### How to list the files and folders ?
-### man command in linux ?
+- Automating repetetive task (tedious) instead of manual, we use scripting so that a linux machine can understand.
+```
+for I in {1..20}
+do
+echo "The number is ${I}"
+done
+
+or 
+for I in {1..20}; do echo "The number is ${I}"; done
+```
+### How to create a file, list and man command ?
+- To create .sh file use touch command and to know the [Linux permissions](https://www.zzee.com/solutions/linux-permissions.shtml)
+```
+touch deletelater.sh
+ls
+ls -ltr
+ls -al
+```
+- 644 - means **0 110 100 100** equivalent is 
+| Syntax      | Description | 
+| :---        |    :----:   | 
+| -rw-r--r--   | owner of the file can read and write      | 
+|               | |
+| Paragraph   | Text        | 
+-rw-r--r--** means 
 ### (vi/vim) - How to write a file in Linux?
 ### Difference between touch and vim? 
 ### How to copy content in Linux?
