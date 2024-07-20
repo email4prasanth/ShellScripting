@@ -20,6 +20,7 @@ ls
 ls -ltr
 ls -al
 ```
+![permissions](https://github.com/email4prasanth/ShellScripting/blob/master/Images/Permissions.png)
 - 644 - means **0 110 100 100** equivalent is 
 - 777 - means **0 111 111 111** equivalent to `-rwxrwxrwx` - all permissions to every one
 
