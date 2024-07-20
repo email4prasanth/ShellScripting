@@ -24,7 +24,9 @@ ls -al
 
 | Syntax      | Description | 
 | :---        |    :----:   | 
-
+| -rw-r--r--   | owner of the file can read and write      | 
+|               | gorup only read permissions|
+|               | users only read permissions|
 ### (vi/vim) - How to write a file in Linux?
 ### Difference between touch and vim? 
 ### How to copy content in Linux?
