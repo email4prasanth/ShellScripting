@@ -1,0 +1,76 @@
+#### Total list of command in Linux 
+Website : https://linuxconfig.org/linux-commands
+for i in ${PATH//:/ }; do ls $i; done | sort  | uniq | wc -l
+for i in ${PATH//:/ }; do ls $i; done | sort  | uniq
+------------------------------------------------------------------------
+Command line arguments, options and parameters
+ls --- {To print files}
+ls -a ---- {To print hidden files also}
+ls -a .bashrc {. indicates the file is hidden}
+ls -l .bashrc {gives long listing about one or more files}
+ls -l -h .bashrc .bash_history {same as above no details regarding -h}
+ls -lh .bashrc .bash_history 
+------------------------------------------------------------------------
+File system navigation
+pwd ------current working directory
+cd Downloads
+pwd ---- 
+/home/marri/Downloads
+cd ../Music -------{To move up from pwd and down to Music dir}
+/home/marri/Music
+------------------------------------------------------------------------
+Creating Directory
+mkdir dir1
+ls
+mkdir /tmp/example
+ls /tmp
+sudo apt  install tree
+mkdir -p dir1/dir2/dir3
+tree dir1/
+------------------------------------------------------------------------
+Creating files and reading the file content
+touch file1
+nano todo-list.txt--- {ctrl+o; Enter; ctrl+x}
+cat todo-list.txt
+file todo-list.txt
+------------------------------------------------------------------------
+Rename or move files and directories
+touch file1
+mkdir dir1
+
+mv file1 file2 ---{rename file1 to file2}
+mv dir1 dir2 --- {rename dir1 to dir2}
+
+mv file2 /tmp/file3 ----- {moved file2 into dir /tmp and renamed it as file3}
+mv dir2 /tmp/dir2 ----- {moved file2 into dir /tmp with same name}
+
+
+mkdir dir4 dir5
+touch file4 file5
+mv file4 dir4 file5 dir5 /tmp ---{move multiple files and dir}
+mv -i sample.txt /tmp/sample.txt --- {-i gives warning to overwrite}
+------------------------------------------------------------------------
+Copy files and Directories
+touch file1
+cp file1 file2
+cp file1 /tmp/file1
+mkdir dir1
+cp dir1 /tmp/
+cp -r dir1 /tmp ----{To copy a directory we need to use the -r ( recursive )}
+mkdir dir2
+touch file1 file2
+cp -r dir2/ file1 file2 /tmp/
+cp -i /tmp/sample.txt sample.txt --- {-i gives warning to overwrite}
+-----------------------------------------------------------------------
+Remove files and Directories
+rm -f file1
+rm -f file12
+rmdir dir1
+rm -r my_files/dir1/ my_files/dir2/ ---{remove multiple dir}
+-----------------------------------------------------------------------
+Search for files or directories
+sudo apt install -y plocate
+locate issue
+{produces a list of files or directories within the entire file-system containing the string issue}
+
+
