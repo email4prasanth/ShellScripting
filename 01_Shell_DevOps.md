@@ -46,16 +46,46 @@ ls -al
 ### echo command in Linux?
 - this is used to print the required content.
 ### How to execute a Shell Script?
+- you can execute in two ways `sh deletelater.sh` or `./deletelater.sh`. First will execute properly later will requires permission
+### How to grant permissions in Linux using chmod command and how to use?
 - Linux is very secure, `chmod` grants permissions to file 
 ![chaning permissions](https://github.com/email4prasanth/ShellScripting/blob/master/Images/permmison_changing.png)
-### How to grant permissions in Linux?
-### chmod command and how to use?
-### How to check the history of commands?
-### Revise all the commands that we learnt till now
+```
+chmod 744 deleterlater.sh
+ls -ltr (-rwxr--r-- which means user can read, write, execute)
+chmod 777 deleterlater.sh
+ls -ltr (-rwxrwxrwx means all users have all permission)
+```
+### How to check the history of commands & how to write a simple shell script?
+- history
 ### How to create folders?
-### How to change the directory in linux?
-### Learn how to write a simple shell script?
+- `pwd` current working directory, 
+```
+nano create_folder_file   
+#!/bin/bash
+mkdir delete_folder
+cd delete_folder
+touch del1 del2
+
+ls-al
+chmod 744 create_folder_file (to give permissions)
+ls -ldr (user permission is granted)
+./create_folder_file (to run the file to create folder delete_folder)
+cd delete_folder
+ls -al
+cd
+```
 ### What is purpose of Shell Scripting in DevOps?
+- Shell scripting are used for 
+    1. Infrastructe maintainance
+    2. configuration
+    3. git code (linux)
+- Ex: suppouse if we want to monitor 1000's of VMs, we can write a shell script and push the code to repository, we can fix a time to monitor all the VMs Health and can get the notification daily about the status wiht an email notification, we can coustomize the require parameters to monitor by writing our own shell script.
 ### How to check CPU and RAM of a Linux Machine?
+- `nproc` is used to check CPU, `free` is used to know the RAM.
 ### What is "Top" command and why is it used?
+```
+top (proceesor running in machine)
+htop
+```
 ### Conclusion of PART - 01
